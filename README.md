@@ -7,7 +7,7 @@
   <a href="">[![MIT License][license-shield]][license-url]</a>
 </div>
 
-<!-- PROJECT LOGO -->
+<!-- PROJECT LOGO okay -->
 <br />
 <div align="center">
 
