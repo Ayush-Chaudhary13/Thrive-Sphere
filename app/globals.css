@@ -1,0 +1,110 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  :root {
+    /* Light mode settings */
+    --background: 220, 14%, 14%;      /* Light gray (matches Tailwind's gray-100) */
+    --foreground: 0, 0%, 100%;     /* Dark gray for primary text */
+
+    --card: 0 0% 100%;
+    --card-foreground: 220,14%,14%;
+
+    --popover: 0 0% 100%;
+    --popover-foreground: 222.2 84% 4.9%;
+
+    --primary: 222, 83%, 56%;        /* Teal or accent blue */
+    --primary-foreground: 0, 0%, 100%;
+
+    --secondary: 220, 14%, 90%;      /* Lighter gray */
+    --secondary-foreground: 222.2 47.4% 11.2%;
+
+    --muted: 220, 14%, 90%;
+    --muted-foreground: 215.4 16.3% 46.9%;
+
+    --accent: 220, 14%, 80%;
+    --accent-foreground: 222.2 47.4% 11.2%;
+
+    --destructive: 0 84.2% 60.2%;
+    --destructive-foreground: 210 40% 98%;
+
+    --border: 220, 14%, 85%;
+    --input: 220, 14%, 85%;
+    --ring: 222, 83%, 56%;
+
+    --radius: 0.5rem;
+  }
+
+  .dark {
+    /* Dark mode settings */
+    --background: 220, 14%, 14%;    /* Dark gray (matches Tailwind's gray-900) */
+    --foreground: 0, 0%, 100%;
+
+    --card: 220, 14%, 20%;
+    --card-foreground: 220, 14%, 98%;
+
+    --popover: 220, 14%, 20%;
+    --popover-foreground: 220, 14%, 98%;
+
+    --primary: 222, 83%, 56%;
+    --primary-foreground: 220, 14%, 20%;
+
+    --secondary: 220, 13%, 24%;
+    --secondary-foreground: 220, 14%, 98%;
+
+    --muted: 220, 13%, 24%;
+    --muted-foreground: 215, 20.2%, 65.1%;
+
+    --accent: 222, 83%, 36%;
+    --accent-foreground: 220, 14%, 98%;
+
+    --destructive: 0, 62.8%, 30.6%;
+    --destructive-foreground: 220, 14%, 98%;
+
+    --border: 220, 14%, 28%;
+    --input: 220, 14%, 28%;
+    --ring: 222, 83%, 56%;
+  }
+}
+
+@layer base {
+  * {
+    @apply border-border;
+  }
+  body {
+    @apply bg-background text-foreground;
+  }
+}
+
+
+
+/* Custom scrollbar styling */
+* {
+  scrollbar-width: thin;
+  scrollbar-color: #5EB1AC #DFE9EB;
+}
+*::-webkit-scrollbar {
+  height: 5px;
+  width: 5px;
+}
+*::-webkit-scrollbar-track {
+  border-radius: 5px;
+  background-color: #DFE9EB;
+}
+*::-webkit-scrollbar-track:hover {
+  background-color: #B8C0C2;
+}
+*::-webkit-scrollbar-track:active {
+  background-color: #B8C0C2;
+}
+*::-webkit-scrollbar-thumb {
+  border-radius: 5px;
+  background-color: #5EB1AC;
+}
+*::-webkit-scrollbar-thumb:hover {
+  background-color: #71D5CF;
+}
+*::-webkit-scrollbar-thumb:active {
+  background-color: #67C2BD;
+}
